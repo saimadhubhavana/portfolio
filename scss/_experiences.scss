@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Basic styling for the road and experiences */
+.road {
+  position: relative;
+}
+
+.experience {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the width of the marker dot */
+}
+
+.dot {
+  width: 20px; /* Same as the width of .experience */
+  height: 20px; /* Same as the width to create a circular dot */
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: -10px; /* Half of the width to center the dot */
+}
+
+.content {
+  display: none;
+  position: absolute;
+  top: -50px; /* Adjust the distance of the content box above the road */
+  left: 30px; /* Adjust the distance of the content box from the dot */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.experience:hover .content {
+  display: block;
+}
